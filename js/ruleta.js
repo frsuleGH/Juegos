@@ -10,7 +10,7 @@ function ruleta() {
     let contenido = document.querySelector('#contenido');
 
     setTimeout(function() {
-        if (aleatorio === 6|| aleatorio ===9) {
+        if (aleatorio === 6|| aleatorio === 9 || aleatorio === 1) {
             let elemento = document.createElement('h2');
             elemento.textContent = 'SHOT🍺!';
             elemento.classList.add('rojo');

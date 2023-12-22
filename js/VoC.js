@@ -4,7 +4,7 @@ function consecuencia(){
 // Obtener el elemento con el id 'contenido'
 let contenido = document.querySelector('#contenido');
 
-aleatorio = Math.floor(Math.random() * 30) + 1;
+aleatorio = Math.floor(Math.random() * 32) + 1;
 
 array = [
     'Realiza un baile sensual',

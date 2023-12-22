@@ -90,7 +90,7 @@ switch (aleatorio) {
 
     case 10: 
         let elemento9 = document.createElement('h2');
-        elemento9.textContent = 'Haz una foto sexy y envíala a un amigo/a.';
+        elemento9.textContent = 'Haz una foto random y envíala a un amigo/a.';
         elemento9.classList.add('rojo');
         elemento9.classList.add('centrar');
         contenido.innerHTML = ''; // Limpiar el contenido anterior
@@ -135,7 +135,7 @@ switch (aleatorio) {
 
     case 15: 
         let elemento14 = document.createElement('h2');
-        elemento14.textContent = 'Envia una foto atrevida tuya en el chat del grupo.';
+        elemento14.textContent = 'Envia una foto random tuya en el chat del grupo.';
         elemento14.classList.add('rojo');
         elemento14.classList.add('centrar');
         contenido.innerHTML = ''; // Limpiar el contenido anterior
@@ -144,7 +144,7 @@ switch (aleatorio) {
 
     case 16: 
         let elemento15 = document.createElement('h2');
-        elemento15.textContent = 'Manda un mensaje de voz sexy a la última persona que te envió un mensaje.';
+        elemento15.textContent = 'Manda un mensaje de voz random a la última persona que te envió un mensaje.';
         elemento15.classList.add('rojo');
         elemento15.classList.add('centrar');
         contenido.innerHTML = ''; // Limpiar el contenido anterior

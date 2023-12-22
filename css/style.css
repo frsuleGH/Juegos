@@ -76,8 +76,8 @@ h1{
 }
 
 #circuloCarga {
-    border: 8px solid #ff0202; /* color del círculo */
-    border-top: 8px solid #3498db; /* color del círculo de carga */
+    border: 8px solid #fff201; /* color del círculo */
+    border-top: 8px solid #979898b3; /* color del círculo de carga */
     border-radius: 50%;
     width: 50px;
     height: 50px;

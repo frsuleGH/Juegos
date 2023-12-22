@@ -3,7 +3,7 @@ document.querySelector('#contenido')
 function reto(){
     let contenido = document.querySelector('#contenido');
 
-    aleatorio = Math.floor(Math.random() * 12) + 1;
+    aleatorio = Math.floor(Math.random() * 13) + 1;
     console.log(aleatorio)
 
             array =[
@@ -18,7 +18,8 @@ function reto(){
             "Parado en el subte",
             "Tomar un colectivo",
             "tomar mate",
-            "Cocinar un asado"
+            "Cocinar un asado",
+            "Te maquillas"
         ]
             impresion = array[aleatorio-1]
             let elemento = document.createElement('h2');

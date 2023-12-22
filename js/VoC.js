@@ -172,7 +172,7 @@ switch (aleatorio) {
     case 19: 
         let elemento18 = document.createElement('h2');
         elemento18.textContent = 'Cuenta una historia vergonzoza';
-        elemento18.classList.add('verde');
+        elemento18.classList.add('rojo');
         elemento18.classList.add('centrar');
         contenido.innerHTML = ''; // Limpiar el contenido anterior
         contenido.appendChild(elemento18);

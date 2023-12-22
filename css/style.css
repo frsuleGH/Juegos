@@ -1,0 +1,99 @@
+body{
+    background-color: #000;
+}
+h1{
+    color: #fff201;
+    text-align: center;
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.selector{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.selector-botones{
+    
+    max-width: 80%;
+    padding: 5px;
+}
+
+
+.selector-botones a{
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 5px;
+    background-color: #fff201;
+    color: #000;
+    padding: 5px;
+    font-family: 'Silkscreen', sans-serif;
+}
+ 
+
+.casa{
+    color: #fff201;
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+    align-items: center;
+}
+
+.verde{
+    color: greenyellow;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 30px;
+    letter-spacing: 3px;
+    max-width: 90%;
+    text-align: center;
+}
+.rojo{
+    color: red;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 30px;
+    letter-spacing: 3px;
+    max-width: 90%;
+    text-align: center;
+
+}
+
+.centrar{
+    text-align: center;
+}
+
+.boton{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Silkscreen', sans-serif;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff201;
+    color: #000;
+    padding: 5px;
+    border-radius: 5px;
+    
+
+}
+
+#circuloCarga {
+    border: 8px solid #ff0202; /* color del círculo */
+    border-top: 8px solid #3498db; /* color del círculo de carga */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* animación de rotación */
+    margin: 20px auto;
+}
+
+.oculto {
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+

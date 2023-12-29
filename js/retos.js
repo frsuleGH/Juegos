@@ -1,10 +1,11 @@
 document.querySelector('#contenido')
 
-function reto(){
+let aleatorioAnteriorReto = 0;
+
+function reto() {
     let contenido = document.querySelector('#contenido');
 
-    aleatorio = Math.floor(Math.random() * 13) + 1;
-    console.log(aleatorio)
+    
 
             array =[
             "Saltar la cuerda",
@@ -21,13 +22,19 @@ function reto(){
             "Cocinar un asado",
             "Te maquillas"
         ]
-            impresion = array[aleatorio-1]
-            let elemento = document.createElement('h2');
-            elemento.textContent = `${impresion}`;
-            elemento.classList.add('rojo');
-            elemento.classList.add('centrar');
-            contenido.innerHTML = ''; // Limpiar el contenido anterior
-            contenido.appendChild(elemento);
+
+        do {
+            aleatorio = Math.floor(Math.random() * array.length) + 1;
+        } while (aleatorio === aleatorioAnteriorReto);
+    
+        aleatorioAnteriorReto = aleatorio;
+        let impresion = array[aleatorio - 1];
+        let elemento = document.createElement('h2');
+        elemento.textContent = `${impresion}`;
+        elemento.classList.add('rojo');
+        elemento.classList.add('centrar');
+        contenido.innerHTML = '';
+        contenido.appendChild(elemento);
 
 }
 

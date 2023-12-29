@@ -1,10 +1,10 @@
 document.querySelector('#contenido')
 
-function consecuencia(){
-// Obtener el elemento con el id 'contenido'
-let contenido = document.querySelector('#contenido');
+let aleatorioAnteriorConsecuencia = 0;
+let aleatorioAnteriorVerdad = 0;
 
-aleatorio = Math.floor(Math.random() * 32) + 1;
+function consecuencia(){
+
 
 array = [
     'Realiza un baile sensual',
@@ -41,26 +41,25 @@ array = [
     'Mantener los ojos cerrados hasta que sea tu turno de nuevo.'
 ]
 
+do {
+    aleatorio = Math.floor(Math.random() * array.length) + 1;
+} while (aleatorio === aleatorioAnteriorConsecuencia);
+
+aleatorioAnteriorReto = aleatorio;
    
-impresion = array[aleatorio-1]
-        let elemento = document.createElement('h2');
-        elemento.textContent = `${impresion}`;
-        elemento.classList.add('rojo');
-        elemento.classList.add('centrar');
-        contenido.innerHTML = ''; // Limpiar el contenido anterior
-        contenido.appendChild(elemento);
+let impresion = array[aleatorio - 1];
+    let elemento = document.createElement('h2');
+    elemento.textContent = `${impresion}`;
+    elemento.classList.add('rojo');
+    elemento.classList.add('centrar');
+    contenido.innerHTML = '';
+    contenido.appendChild(elemento);
         
 
 }
 
 function verdad() {
-    // Obtener el elemento con el id 'contenido'
-    let contenido = document.querySelector('#contenido');
 
-    aleatorio = Math.floor(Math.random() * 60) + 1;
-    console.log(aleatorio)
-
-  
     array = [
         '¿Cuál es tu fantasía más atrevida que aún no has cumplido?',
         '¿Alguna vez has enviado fotos íntimas a alguien?',
@@ -132,14 +131,19 @@ function verdad() {
         '¿Qué es algo que nunca harás en la cama?'
     ]
     
+    do {
+        aleatorio = Math.floor(Math.random() * array.length) + 1;
+    } while (aleatorio === aleatorioAnteriorVerdad);
 
-    impresion = array[aleatorio-1]
-            let elemento = document.createElement('h2');
-            elemento.textContent = `${impresion}`;
-            elemento.classList.add('verde');
-            elemento.classList.add('centrar');
-            contenido.innerHTML = ''; // Limpiar el contenido anterior
-            contenido.appendChild(elemento);
+    aleatorioAnteriorReto = aleatorio;
+
+    let impresion = array[aleatorio - 1];
+    let elemento = document.createElement('h2');
+    elemento.textContent = `${impresion}`;
+    elemento.classList.add('verde');
+    elemento.classList.add('centrar');
+    contenido.innerHTML = '';
+    contenido.appendChild(elemento);
   
     }
 

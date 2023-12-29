@@ -68,7 +68,7 @@ function yonunca() {
         "Yo nunca he estado con nadie de mi familia.",
         "Yo nunca he sido infiel.",
         "Yo nunca he estado con el ex de un amigo o amiga.",
-        "Yo nunca he pasado la noche con alguien este grupo.",
+        "Yo nunca he pasado la noche con alguien de este grupo.",
         "Yo nunca he dicho el nombre equivocado durante una relación.",
         "Yo nunca he tenido una relación sexual con un compañero de cursado.",
         "Yo nunca le he sido infiel a ninguna de mis parejas.",
